@@ -1,0 +1,272 @@
+/* bellow 1400px (small desktops)*/
+@media (max-width: 87.5em) {
+  .section-tretmani-div {
+    max-width: 110rem;
+  }
+  .section-cleaning-div {
+    max-width: 110rem;
+  }
+  .section-contact-div {
+    max-width: 110rem;
+  }
+  .section-vremerada-div {
+    max-width: 110rem;
+  }
+  #map {
+    width: 110rem;
+    height: 45rem;
+  }
+}
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+  .section-tretmani-div {
+    max-width: 100rem;
+  }
+  .section-cleaning-div {
+    max-width: 100rem;
+  }
+  .section-contact-div {
+    max-width: 85rem;
+  }
+  .section-vremerada-div {
+    max-width: 85rem;
+  }
+  #map {
+    width: 85rem;
+    height: 45rem;
+  }
+}
+@media (max-width: 59.5em) {
+  .section-tretmani-div {
+    max-width: 90rem;
+  }
+  .section-cleaning-div {
+    max-width: 90rem;
+  }
+  .section-contact-div {
+    max-width: 85rem;
+  }
+  .section-vremerada-div {
+    max-width: 85rem;
+  }
+}
+@media (max-width: 53.125em) {
+  html {
+    font-size: 56.25%;
+  }
+  .section-tretmani-div {
+    max-width: 80rem;
+  }
+  .section-cleaning-div {
+    max-width: 80rem;
+  }
+  .section-contact-div {
+    max-width: 75rem;
+  }
+  .section-vremerada-div {
+    max-width: 75rem;
+  }
+  #map {
+    width: 75rem;
+    height: 40rem;
+  }
+}
+
+@media (max-width: 46.25em) {
+  .btn-mobile-nav {
+    display: block;
+    margin-right: 4rem;
+    z-index: 9999;
+  }
+  .main-nav {
+    background-color: rgba(0, 0, 0, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    z-index: 200;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .fa-solid.fa-xmark.icon-mobile-nav {
+    display: block;
+  }
+
+  .nav-open .fa-solid.fa-bars.icon-mobile-nav {
+    display: none;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .nav-li:link,
+  .nav-li:visited {
+    font-size: 3rem;
+    border: none;
+  }
+
+  /*  */
+
+  .tretmani-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .cleaning-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .section-tretmani-div {
+    max-width: 65rem;
+  }
+  .section-cleaning-div {
+    max-width: 65rem;
+  }
+  .section-contact-div {
+    max-width: 65rem;
+  }
+  #map {
+    width: 65rem;
+    height: 40rem;
+  }
+  .contact-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .section-vremerada-div {
+    max-width: 65rem;
+  }
+  .home-page-text {
+    font-size: 4rem;
+  }
+  .slider {
+    height: 70vh;
+  }
+  .slide {
+    height: 70vh;
+  }
+}
+@media (max-width: 38.375em) {
+  .home-page {
+    height: 50vh;
+  }
+  .home-page-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .home-page-text {
+    font-size: 2rem;
+  }
+  .tretmani-grid {
+    grid-template-columns: 1fr;
+  }
+  .cleaning-grid {
+    grid-template-columns: 1fr;
+  }
+  .section-tretmani-div {
+    max-width: 40rem;
+  }
+  .section-cleaning-div {
+    max-width: 40rem;
+  }
+  .section-contact-div {
+    max-width: 50rem;
+  }
+  #map {
+    width: 50rem;
+    height: 30rem;
+  }
+  .contact-div {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .section-vremerada-div {
+    max-width: 50rem;
+  }
+  .home-page-text {
+    font-size: 3rem;
+  }
+  .slider {
+    height: 50vh;
+  }
+  .slide {
+    height: 50vh;
+  }
+}
+@media (max-width: 31.1875em) {
+  .home-page {
+    height: 40vh;
+  }
+  .home-page-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .home-page-text {
+    font-size: 2rem;
+  }
+  .section-contact-div {
+    max-width: 40rem;
+  }
+  #map {
+    width: 40rem;
+    height: 30rem;
+  }
+  .contact-div {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .section-vremerada-div {
+    max-width: 50rem;
+  }
+  .home-page-text {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 26.9375em) {
+  .contact-div {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .section-vremerada-div {
+    max-width: 40rem;
+  }
+  .home-page-text {
+    font-size: 3rem;
+  }
+  .footer-div {
+    color: rgb(175, 175, 175);
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 26.3125em) {
+  .section-tretmani-div {
+    max-width: 35rem;
+  }
+  .section-cleaning-div {
+    max-width: 35rem;
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "laza-1.3",
+  "version": "1.0.0",
+  "description": "",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html klasik.html bronze.html silver.html gold.html",
+    "build": "parcel build index.html klasik.html bronze.html silver.html gold.html --dist-dir ./dist"
+  },
+  "author": "Vukasin Rajic",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  }
+}

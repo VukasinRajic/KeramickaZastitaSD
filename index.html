@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/queries.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""
+    />
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+      integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+      crossorigin=""
+    ></script>
+    <title>Keramička zaštita SD</title>
+  </head>
+  <body>
+    <div class="section-no-sticky" id="secnosticky">
+      <div class="nav-sticky-prefix" id="section-1">
+        <!-- nav-open -->
+        <nav class="nav">
+          <a class="logo" href="#section-1">
+            <img src="/photos/logo-1.jpg" class="nav-logo" />
+          </a>
+
+          <div class="main-nav">
+            <ul class="nav-list">
+              <li><a class="nav-li" href="#section-3">Paketi</a></li>
+              <li>
+                <a class="nav-li" href="#section-4">Interior detailing</a>
+              </li>
+              <li><a class="nav-li nav-cta" href="#section-5">Kontakt</a></li>
+              <li><a class="nav-li" href="#section-6">Vreme rada</a></li>
+              <li><a class="nav-li" href="#gallery1">Galerija</a></li>
+            </ul>
+          </div>
+
+          <button class="btn-mobile-nav">
+            <i class="fa-solid fa-bars icon-mobile-nav"></i>
+            <i class="fa-solid fa-xmark icon-mobile-nav"></i>
+          </button>
+        </nav>
+        <!--  -->
+      </div>
+      <section class="home-page">
+        <p class="home-page-text">Keramička zaštita SMEDEREVO</p>
+        <img src="/photos/test.jpeg" class="home-page-background" />
+      </section>
+    </div>
+
+    <section class="section-tretmani section" id="section-3">
+      <div class="section-tretmani-div">
+        <h2>Paketi:</h2>
+        <div class="tretmani-grid">
+          <div class="tretmani gold" id="gold">GOLD</div>
+          <div class="tretmani silver" id="silver">SILVER</div>
+          <div class="tretmani bronze" id="bronze">BRONZE</div>
+          <div class="tretmani klasik" id="klasik">KLASIK</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-cleaning section" id="section-4">
+      <div class="section-cleaning-div">
+        <h2>Interior detailing:</h2>
+        <div class="cleaning-grid">
+          <div class="cleaning malavozila">MALA VOZILA</div>
+          <div class="cleaning srednjavozila">SREDNJA VOZILA</div>
+          <div class="cleaning velikavozila">VELIKA VOZILA</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-contact section" id="section-5">
+      <div class="section-contact-div">
+        <h2>KONTAKT :</h2>
+        <div id="map"></div>
+        <div class="contact-div">
+          <div class="contact">
+            <i class="fa-solid fa-warehouse"></i>
+            <p>Kolarski put</p>
+          </div>
+
+          <div class="contact">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+381 64 6140065"><p>+381 64 6140065</p></a>
+          </div>
+
+          <div class="contact insta">
+            <a
+              href="https://www.instagram.com/keramicka_zastita_sd"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-vremerada section" id="section-6">
+      <div class="section-vremerada-div">
+        <p class="prvi">Vreme rada :</p>
+        <p class="drugi">Svakog dana od 10:00 do 19:00</p>
+        <p class="treci">
+          U praznicnim periodima pozovite telefonom radi mogucih izmena !
+        </p>
+      </div>
+    </section>
+
+    <section class="section-gallery" id="gallery1">
+      <div class="gallery-text"><p>Par nasih klijenata:</p></div>
+
+      <div class="slider">
+        <div class="slide">
+          <img src="/photos/galerija/bmw3-1.jpeg" />
+        </div>
+
+        <div class="slide">
+          <img src="/photos/galerija/bmw3-2.jpeg" />
+        </div>
+        <div class="slide">
+          <img src="/photos/galerija/bmw3-3.jpeg" />
+        </div>
+        <div class="slide">
+          <img src="/photos/galerija/bmw3-4.jpeg" />
+        </div>
+        <div class="slide">
+          <img src="/photos/galerija/bmw3-5.jpeg" />
+        </div>
+        <div class="slide">
+          <img src="/photos/galerija/bmw3-6.jpeg" />
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+    <section class="section-gallery" id="gallery2">
+      <div class="slider">
+        <div class="slide">
+          <img src="/photos/galerija/a6-1.jpeg" />
+        </div>
+
+        <div class="slide">
+          <img src="/photos/galerija/a6-2.jpeg" />
+        </div>
+        <div class="slide">
+          <img src="/photos/galerija/a6-3.jpeg" />
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+    <section class="section-gallery" id="gallery3">
+      <div class="slider">
+        <div class="slide">
+          <img src="/photos/galerija/bmw5-1.jpeg" />
+        </div>
+
+        <div class="slide">
+          <img src="/photos/galerija/bmw5-2.jpeg" />
+        </div>
+        <div class="slide">
+          <img src="/photos/galerija/bmw5-3.jpeg" />
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+    <section class="section-gallery" id="gallery4">
+      <div class="slider">
+        <div class="slide">
+          <img src="/photos/galerija/brod-1.jpeg" />
+        </div>
+
+        <div class="slide">
+          <img src="/photos/galerija/jetski-5.jpeg" />
+        </div>
+        <div class="slide">
+          <img src="/photos/galerija/brod-2.jpeg" />
+        </div>
+        <div class="slide">
+          <img src="/photos/galerija/brod-3.jpeg" />
+        </div>
+        <div class="slide">
+          <img src="/photos/galerija/brod-4.jpeg" />
+        </div>
+        <div class="slide">
+          <img src="/photos/galerija/brod-5.jpeg" />
+        </div>
+        <div class="slide">
+          <img src="/photos/galerija/brod-6.jpeg" />
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+    <section class="section-gallery" id="gallery5">
+      <div class="slider">
+        <div class="slide">
+          <img src="/photos/galerija/crna-panamera-4.jpeg" />
+        </div>
+        <div class="slide">
+          <img src="/photos/galerija/crna-panamera-2.jpeg" />
+        </div>
+        <div class="slide">
+          <img src="/photos/galerija/crna-panamera-3.jpeg" />
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+    <section class="section-gallery" id="gallery6">
+      <div class="slider">
+        <div class="slide">
+          <img src="/photos/galerija/jetski-4.jpeg" />
+        </div>
+        <div class="slide">
+          <img src="/photos/galerija/jetski-3.jpeg" />
+        </div>
+        <div class="slide">
+          <img src="/photos/galerija/jetski-2.jpeg" />
+        </div>
+        <div class="slide">
+          <img src="/photos/galerija/jetski-1.jpeg" />
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+    <section class="section-gallery" id="gallery7">
+      <div class="slider">
+        <div class="slide">
+          <img src="/photos/galerija/m5-1.jpeg" />
+        </div>
+        <div class="slide">
+          <img src="/photos/galerija/m5-2.jpeg" />
+        </div>
+        <div class="slide">
+          <img src="/photos/galerija/m5-3.jpeg" />
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+    <section class="section-gallery" id="gallery8">
+      <div class="slider">
+        <div class="slide">
+          <img src="/photos/galerija/macan-1.jpeg" />
+        </div>
+        <div class="slide">
+          <img src="/photos/galerija/macan-2.jpeg" />
+        </div>
+        <div class="slide">
+          <img src="/photos/galerija/macan-3.jpeg" />
+        </div>
+        <div class="slide">
+          <img src="/photos/galerija/macan-4.jpeg" />
+        </div>
+        <div class="slide">
+          <img src="/photos/galerija/macan-5.jpeg" />
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+    <section class="section-gallery" id="gallery9">
+      <div class="slider">
+        <div class="slide">
+          <img src="/photos/galerija/porshe911-1.jpeg" />
+        </div>
+        <div class="slide">
+          <img src="/photos/galerija/porshe911-2.jpeg" />
+        </div>
+        <div class="slide">
+          <img src="/photos/galerija/porshe911-3.jpeg" />
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+    <section class="section-gallery" id="gallery10">
+      <div class="slider">
+        <div class="slide">
+          <img src="/photos/galerija/q8-1.jpeg" />
+        </div>
+        <div class="slide">
+          <img src="/photos/galerija/q8-2.jpeg" />
+        </div>
+        <div class="slide">
+          <img src="/photos/galerija/q8-3.jpeg" />
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <section class="section-faq section">
+      <h2 class="tittle">FAQ</h2>
+      <div class="faq">
+        <div class="question">
+          <h3>Koliko često treba polirati vozilo?</h3>
+          <p class="icon">&darr;</p>
+        </div>
+        <div class="answer">
+          <p>
+            Ako je reč o poliranju automobila, preporučuje se da to radite
+            svakih 3-6 meseci kako biste održali sjaj i zaštitu laka. Međutim,
+            ovo može zavisiti od faktora kao što su izloženost sunčevoj
+            svetlosti, često pranje, upotreba automobila i slično. Ako vozilo
+            prolazi kroz teže uslove, može biti potrebno češće poliranje.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <div class="question">
+          <h3>
+            Zašto je bitno detaljno čišćenje enterijera u procesu auto
+            detailing-a?
+          </h3>
+          <p class="icon">&darr;</p>
+        </div>
+        <div class="answer">
+          <p>
+            Detaljno čišćenje enterijera uklanja duboku prljavštinu, alergene i
+            mirise, poboljšava čistoću i higijenu, pridonosi zdravijem vozačkom
+            okruženju, i pozitivno utiče na udobnost vožnje.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq last">
+        <div class="question">
+          <h3>Da li se isplati uložiti u naš GOLD paket?</h3>
+          <p class="icon">&darr;</p>
+        </div>
+        <div class="answer">
+          <p>
+            Profesionalno čišćenje automobila ima trenutne ali i dugoročne
+            benefite, očuvava spoljni izgled, sprečava propadanje boje,
+            doprinosi značajno na vrednosti pri prodaji.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-div">
+        <p class="copyright">
+          Copyright &copy; 2024 by keramicka_zastita_sd. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script defer src="main.js"></script>
+  </body>
+</html>
